@@ -12,7 +12,6 @@ let MENU = `Bienvenidos a Juemix
            2- Gorras
            3- Solo estaba mirando
            `
-
     do {
       MENU = prompt(MENU);
 
@@ -42,9 +41,9 @@ let MENU = `Bienvenidos a Juemix
           break;
 
         default:
-          alert("Opción no válida. Por favor elija 1, 2 o 3.");
+          alert("Opción no válida. Stock 10 unidades maximo.");
       }
-    } while (MENU !== "3");
+    } while (MENU !== "10");
 
     // Mostrar resumen
     const total = (cantidadRemeras * remeraPrecio) + (cantidadGorras * gorraPrecio);
